@@ -1,16 +1,16 @@
 
-function myFunction() {
+function getLocation() {
   return document.getElementById("locationSelected").value;
 }
 
-function myFunction2() {
+function getGrade() {
   return document.getElementById("gradeSelected").value;
 }
 
-function myFunction3(){
+function goToLocPage(){
   console.log("Entered function3 after grade selected.");
-  var loc = myFunction();
-  var grade = myFunction2();
+  var loc = getLocation();
+  var grade = getGrade();
   var hashName;     //declare to use later for where to go on redirect page.
     if (loc=="fremont"){    //if fremont was selected, check which grade selected and redirect to the fremont page to the grade section.
       if (grade=="elem"){
