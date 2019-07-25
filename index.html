@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Hops for Opps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+    <!-- Ubuntu is the heading -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
+    <!-- Quicksand is the thin font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <!-- this one is footer -->
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="java.js"> </script>
+  </head>
+
+<body>
+  <header>
+    <!-- <div id="myContainer"> -->
+    <div class = "container">
+      <nav>
+      <ul>
+        <a href="index.html"><img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a>
+        <li><a href="about.html">ABOUT</a></li>
+        <li> <div class="dropdownOpp">
+          <button class="dropbtn">ALL OPPORTUNITIES
+            <i class= "dropOpp"></i>
+          </button>
+          <div class="dropdownOpp-content">
+            <a href="fremont.html">Fremont</a>
+            <a href="milpitas.html">Milpitas</a>
+            <a href="sanjose.html">San Jose</a>
+            <a href="otherlocation.html">Other</a>
+            <a href="allopp.html">All</a>
+          </div>
+        </div> </li>
+        <!-- <li><a href="allopp.html">ALL OPPORTUNITIES</a></li> -->
+        <li><a href="online.html">ONLINE RESOURCES</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+      </nav>
+    </div>
+  <!-- </div> -->
+  </header>
+
+<!-- slogan section -->
+<div class="containerslogan">
+  <img id="light" src="https://i.ibb.co/NrYXHmT/maxresdefault.jpg" alt="" width="100%" height="60%">
+  <div class="centered"> LEAP TOWARD A BRIGHTER FUTURE</div>
+</div>
+
+
+<!-- Dropdown Menu -->
+
+<div class="searchTitle">
+  <p>SEARCH FOR OPPORTUNITIES NEAR YOU:</p>
+</div>
+<div class="box semi-square">
+  <div class="styled-select blue semi-square">
+    <select id="locationSelected">
+       <!-- onchange="myFunction()"> -->
+      <option selected value="">SELECT LOCATION</option>
+      <option value="fremont">Fremont</option>
+      <option value="mil">Milpitas</option>
+  		<option value="sj">San Jose</option>
+  		<option value="other">Other</option>
+    </select>
+  </div>
+  <br>
+  <div class="styled-select blue semi-square">
+    <select id = "gradeSelected" onchange="myFunction3()">  <!-- deleted: onchange="myFunction2()" don't think i need it bc no paramter given since later called. but leave just in case -->
+      <option selected value="">SELECT GRADE</option>
+      <option value="elem">Elementary</option>
+      <option value="mid">Middle</option>
+  		<option value="high">High</option>
+  		<!-- <option value= "other">Other</option> -->
+    </select>
+  </div>
+    <!-- <button onclick="redirect()">SEARCH</button> -->
+</div>
+
+<div class="footer">
+  <p>© Hops for Opps. All rights reserved. | Creators: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
+
+  </p>
+</div>
+
+</body>
+</html>
