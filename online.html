@@ -12,35 +12,32 @@
     <!-- font-family: 'Playfair Display', serif; (is the heading) -->
     <!-- font-family: 'Montserrat', sans-serif; (is the body) -->
     <link rel="stylesheet" href="style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
     <script src="java.js"> </script>
   </head>
 
 <body>
   <header>
+    <!-- <div id="myContainer"> -->
     <div class = "container">
-      <nav>
-      <ul>
-        <a href="index.html"><img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a>
-        <li><a href="about.html">ABOUT</a></li>
-        <li> <div class="dropdownOpp">
-          <button class="dropbtn">ALL OPPORTUNITIES
-            <i class= "dropOpp"></i>
-          </button>
-          <div class="dropdownOpp-content">
-            <a href="fremont.html">Fremont</a>
-            <a href="milpitas.html">Milpitas</a>
-            <a href="sanjose.html">San Jose</a>
-            <a href="otherlocation.html">Other</a>
-            <a href="allopp.html">All</a>
+      <a href="index.html">
+        <img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a>
+      <ul id="mainMenu">
+        <li><a href="about.html" class="btn">ABOUT</a></li>
+        <li class="dropdownBtn"><a href="allopp.html" class="btn">ALL OPPORTUNITIES</a>
+          <div class="dropdownMenu">
+            <a href="fremont.html" class="btn">Fremont</a>
+            <a href="milpitas.html" class="btn">Milpitas</a>
+            <a href="sanjose.html" class="btn">San Jose</a>
+            <a href="otherlocation.html" class="btn">Other</a>
+            <a href="allopp.html" class="btn">Map</a>
           </div>
-        </div> </li>
-        <!-- <li><a href="allopp.html">ALL OPPORTUNITIES</a></li> -->
-        <li><a href="online.html">ONLINE RESOURCES</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
+          </li>
+        <li><a href="online.html" class="btn">ONLINE RESOURCES</a></li>
+        <li><a href="contact.html" class="btn">CONTACT US</a></li>
       </ul>
-      </nav>
     </div>
+  <!-- </div> -->
   </header>
 
   <div class="containerslogan">
@@ -52,48 +49,90 @@
   <a id="onlineresources"></a>
   <div class="containerevent">
       <div class="boxevent">
-          <div class="iconevent">School Year</div>
+          <div class="iconevent">All Year</div>
           <br>
           <div class="content">
-            <h id="headingevent"> STEMgirls Elementary STEM Outreach Program: Pomeroy </h>
+            <h id="headingevent"> Khan Academy </h>
             <br>
             <br>
-            <p id="paragraphevent">A free, afterschool program where 4th-6th graders get exposure to different STEM subjects through
-            interactive lessons. Lessons happen once a month. The sign up is at the beginning of the school year.</p>
-            <a href="#">Sign Up</a>
+            <p id="paragraphevent">Khan Academy produces short lessons in the form of videos. Its website also includes supplementary practice exercises and materials for educators, in a variety of languages, covering a multitude of subjects. Students can practice at their own pace, first filling in gaps in their understanding and then accelerating their learning.</p>
+            <a href="https://www.khanacademy.org/">Learn More</a>
             </div>
           </div>
         </div>
   <div class="containerevent">
       <div class="boxevent">
-          <div class="iconevent">01</div>
+          <div class="iconevent">All Year</div>
           <br>
           <div class="content">
-            <h id="headingevent"> Service Name </h>
+            <h id="headingevent"> Udemy </h>
             <br>
             <br>
-            <p id="paragraphevent">jfkdkhfhsjkhfskjhfdjshs</p>
-            <a href="#">Read More</a>
+            <p id="paragraphevent"> Udemy has over 130,000 courses for students to utilize for technical certification. Udemy also provides tools which enable users to create a course, as well as promote it.</p>
+            <a href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=NEW-AW-PROS-Branded-Search-World-EN-ENG_._ci__._sl_ENG_._vi__._sd_All_._la_EN_._&tabei=7&utm_term=_._ag_48933380294_._ad_279519253626_._de_c_._dm__._pl__._ti_kwd-310556426868_._li_9032185_._pd__._&gclid=EAIaIQobChMIgv-utonT4wIVkyCtBh1R7AcnEAAYASAAEgIZ0vD_BwE">Learn More</a>
             </div>
           </div>
         </div>
   <div class="containerevent">
       <div class="boxevent">
-          <div class="iconevent">01</div>
+          <div class="iconevent">All Year</div>
           <br>
           <div class="content">
-            <h id="headingevent"> Service Name </h>
+            <h id="headingevent"> Coursera </h>
             <br>
             <br>
-            <p id="paragraphevent">jfkdkhfhsjkhfskjhfdjshs</p>
-            <a href="#">Read More</a>
+            <p id="paragraphevent">Coursera works with universities and other organizations to offer online courses, specializations, and degrees in a variety of subjects, such as engineering, humanities, medicine, biology, social sciences, mathematics, business, computer science, digital marketing, data science, and others.</p>
+            <a href="https://www.coursera.org/">Learn More</a>
             </div>
           </div>
         </div>
 </section>
 
+<section id="eventpage">
+<a id="onlineresources"></a>
+<div class="containerevent">
+    <div class="boxevent">
+        <div class="iconevent">All Year</div>
+        <br>
+        <div class="content">
+          <h id="headingevent"> CodeAcademy </h>
+          <br>
+          <br>
+          <p id="paragraphevent">Codecademy is an online interactive platform that offers free coding classes in 12 different programming languages including Python, Java, JavaScript, Ruby, SQL, C++, and Sass, as well as markup languages HTML and CSS</p>
+          <a href="https://www.codecademy.com/pro/membership?gclid=EAIaIQobChMItqHjzonT4wIVkLfsCh2dkASqEAAYASAAEgJT0vD_BwE">Learn More</a>
+          </div>
+        </div>
+      </div>
+<div class="containerevent">
+    <div class="boxevent">
+        <div class="iconevent">All Year</div>
+        <br>
+        <div class="content">
+          <h id="headingevent"> Annenburg Learner </h>
+          <br>
+          <br>
+          <p id="paragraphevent"> Annenburg Learner creates opportunities for students to apply classroom content to addressing issues in their communities. They provide teacher resources in everything from math and science, to foreign languages and social studies.</p>
+          <a href="https://www.learner.org/">Learn More</a>
+          </div>
+        </div>
+      </div>
+<div class="containerevent">
+    <div class="boxevent">
+        <div class="iconevent">All Year</div>
+        <br>
+        <div class="content">
+          <h id="headingevent"> Tuition Free Online Public Schools </h>
+          <br>
+          <br>
+          <p id="paragraphevent">K12 uses digital technology to provide a rigorous, interactive curriculum and high-quality educational experiences that give students an opportunity to succeed. They serve students in K-12 and have state-certified teachers who provide instruction and support.</p>
+          <a href="https://www.k12.com/virtual-school-offerings/online-public-schools.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+</section>
+
         <div class="footer">
-          <p>© Hops for Opps. All rights reserved. | Creators: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
+          <p>© Hops for Opps. All rights reserved. | Coded By: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
 
           </p>
         </div>

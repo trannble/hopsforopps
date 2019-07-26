@@ -3,6 +3,7 @@
 
   <head>
     <title>Hops for Opps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
     <!-- Ubutu is the heading -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
@@ -15,29 +16,26 @@
 
 <body>
   <header>
+    <!-- <div id="myContainer"> -->
     <div class = "container">
-      <nav>
-      <ul>
-        <a href="index.html"><img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a>
-        <li><a href="about.html">ABOUT</a></li>
-        <li> <div class="dropdownOpp">
-          <button class="dropbtn">ALL OPPORTUNITIES
-            <i class= "dropOpp"></i>
-          </button>
-          <div class="dropdownOpp-content">
-            <a href="fremont.html">Fremont</a>
-            <a href="milpitas.html">Milpitas</a>
-            <a href="sanjose.html">San Jose</a>
-            <a href="otherlocation.html">Other</a>
-            <a href="allopp.html">All</a>
-          </div>
-        </div> </li>
+      <a href="index.html">
+        <img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a></li>
+      <ul id="mainMenu">
+        <li><a href="about.html" class="btn">ABOUT</a></li>
+        <li class="dropdownBtn"><a href="allopp.html" class="btn">ALL OPPORTUNITIES</a>
+          <div class="dropdownMenu">
+            <a href="fremont.html" class="btn">Fremont</a>
+            <a href="milpitas.html" class="btn">Milpitas</a>
+            <a href="sanjose.html" class="btn">San Jose</a>
+            <a href="otherlocation.html" class="btn">Other</a>
+            <a href="allopp.html" class="btn">Map</a>
+          </li>
         <!-- <li><a href="allopp.html">ALL OPPORTUNITIES</a></li> -->
-        <li><a href="online.html">ONLINE RESOURCES</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="online.html" class="btn">ONLINE RESOURCES</a></li>
+        <li><a href="contact.html" class="btn">CONTACT US</a></li>
       </ul>
-      </nav>
     </div>
+  <!-- </div> -->
   </header>
 
   <div class="containerslogan">
@@ -51,48 +49,53 @@
     <h id="gradeevent"> ELEMENTARY SCHOOL </h> <br>
     </div>
   </section>
-
+<!-- ELEMENTARY SCHOOL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
   <section id="eventpage">
   <div class="containerevent">
+      <div class="boxevent">
+          <div class="iconevent">Year Round</div>
+          <br>
+          <div class="content">
+            <h id="headingevent"> Santa Clara County Library </h>
+            <br>
+            <p id="paragraphevent">Location: Varies
+              <br>
+              <br>
+              The Santa Clara County Libraries host a variety of programs for kids including art, reading, storytime, and so much more for free. </p>
+  <a href="http://sccl.evanced.info/signup/list?ag=729%2c727%2c728%2c731%2c725%2c730&df=list&do=1&nd=60&lib=999">Learn More</a>
+            </div>
+          </div>
+        </div>
+  <!-- <div class="containerevent">
       <div class="boxevent">
           <div class="iconevent">School Year</div>
           <br>
           <div class="content">
-            <h id="headingevent"> STEMgirls Elementary STEM Outreach Program: Pomeroy </h>
+            <h id="headingevent">STEMgirls Elementary Outreach Program: Weller </h>
             <br>
-            <br>
-            <p id="paragraphevent">A free, afterschool program where 4th-6th graders get exposure to different STEM subjects through
-            interactive lessons. Lessons happen once a month. The sign up is at the beginning of the school year.</p>
-            <a href="#">Sign Up</a>
+            <p id="paragraphevent">Location: Weller Elementary School
+              <br>
+              <br>
+              A free, afterschool program where 4th-6th graders get exposure to different STEM subjects through interactive lessons. Lessons happen once a month and include activities like 3D printing, atom model building, lava lamp, catapult-building, and more!</p>
+            <a href="https://forms.gle/RVYtPGidVoHdRREB9">Learn More</a>
             </div>
           </div>
         </div>
   <div class="containerevent">
       <div class="boxevent">
-          <div class="iconevent">Year-round</div>
+          <div class="iconevent">Year Round</div>
           <br>
           <div class="content">
-            <h id="headingevent"> Santa Clara County Library Programs </h>
+            <h id="headingevent">CoderDojo</h>
             <br>
-            <br>
-            <p id="paragraphevent">  </p>
-            <a href="https://www.sccl.org/Events/Featured-Events-Blog">More information</a>
+            <p id="paragraphevent">Location: SJCC Milpitas Extension
+              <br>
+              <br>
+CoderDojo is a global volunteer-led community of free programming workshops for young people between 7 and 17. The Milpitas extension is based in the the SJCC Milpitas Extension. Youths visiting our Dojo will learn to build websites, creative applications, and explore technology in a creative and social environment. </p>
+              <a href="https://tinyurl.com/CoderDojoMilpitas">Learn More</a>
             </div>
           </div>
-        </div>
-  <div class="containerevent">
-      <div class="boxevent">
-          <div class="iconevent">01</div>
-          <br>
-          <div class="content">
-            <h id="headingevent"> Service Name </h>
-            <br>
-            <br>
-            <p id="paragraphevent">jfkdkhfhsjkhfskjhfdjshs</p>
-            <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
+        </div> -->
 
 </section>
 
@@ -102,32 +105,37 @@
   <h id="gradeevent"> MIDDLE SCHOOL </h> <br>
   </div>
 </section>
-
+<!-- MIDDLE SCHOOL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <section id="eventpage">
 <div class="containerevent">
     <div class="boxevent">
-        <div class="iconevent">School Year</div>
+        <div class="iconevent">Year Round</div>
         <br>
         <div class="content">
-          <h id="headingevent"> STEMgirls Elementary STEM Outreach Program: Pomeroy </h>
+          <h id="headingevent"> Santa Clara County Library </h>
           <br>
-          <br>
-          <p id="paragraphevent">A free, afterschool program where 4th-6th graders get exposure to different STEM subjects through
-          interactive lessons. Lessons happen once a month. The sign up is at the beginning of the school year.</p>
-          <a href="#">Sign Up</a>
+          <p id="paragraphevent">Location: Varies
+            <br>
+            <br>
+            The Santa Clara County Libraries host a variety of programs for kids including art, reading, storytime, and so much more for free. </p>
+<a href="http://sccl.evanced.info/signup/list?ag=729%2c727%2c728%2c731%2c725%2c730&df=list&do=1&nd=60&lib=999">Learn More</a>
           </div>
         </div>
       </div>
+</section>
+<!-- <section id="eventpage">
 <div class="containerevent">
     <div class="boxevent">
-        <div class="iconevent">01</div>
+        <div class="iconevent">Year Round</div>
         <br>
         <div class="content">
-          <h id="headingevent"> Service Name </h>
+          <h id="headingevent"> Santa Clara County Library </h>
           <br>
-          <br>
-          <p id="paragraphevent">jfkdkhfhsjkhfskjhfdjshs</p>
-          <a href="#">Read More</a>
+          <p id="paragraphevent">Location: Varies
+            <br>
+            <br>
+            The Santa Clara County Libraries host a variety of programs for kids including art, reading, storytime, and so much more for free. </p>
+<a href="http://sccl.evanced.info/signup/list?ag=729%2c727%2c728%2c731%2c725%2c730&df=list&do=1&nd=60&lib=999">Learn More</a>
           </div>
         </div>
       </div>
@@ -145,7 +153,7 @@
         </div>
       </div>
 
-</section>
+</section> -->
 
 <section id="titleevent">
   <div align="center">
@@ -153,52 +161,91 @@
   <h id="gradeevent"> HIGH SCHOOL </h> <br>
   </div>
 </section>
-
+<!-- HIGH SCHOOL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <section id="eventpage">
 <div class="containerevent">
     <div class="boxevent">
-        <div class="iconevent">Fall</div>
+        <div class="iconevent">Year Round</div>
         <br>
         <div class="content">
-          <h id="headingevent"> Hyphen-Hacks in SF</h>
+          <h id="headingevent"> Hackathons </h>
           <br>
-          <br>
-          <p id="paragraphevent">"Hyphen-Hacks is a 24-hour hackathon aimed at high school students from around the Bay Area with diverse backgrounds and skill levels. We hope to create a space where all students are inspired to learn new skills while collaborating on new inventions."</p>
-          <a href="https://hyphen-hacks.com">More information</a>
+          <p id="paragraphevent">Location: Varies
+            <br>
+            <br>
+            Hackathons is a great way to get involved with engineering and network. An event, typically lasting several days, in which a large number of people meet to engage in collaborative computer programming. Check out all the locations below! </p>
+          <a href="https://hackathons.hackclub.com/">Learn More</a>
           </div>
         </div>
       </div>
 <div class="containerevent">
     <div class="boxevent">
-        <div class="iconevent">01</div>
+        <div class="iconevent">Year Round</div>
         <br>
         <div class="content">
-          <h id="headingevent"> Service Name </h>
+          <h id="headingevent">Stanford </h>
           <br>
-          <br>
-          <p id="paragraphevent">jfkdkhfhsjkhfskjhfdjshs</p>
-          <a href="#">Read More</a>
+          <p id="paragraphevent">Location: Stanford University
+            <br>
+            <br>
+            Stanford hosts a variety of free programs for high school students. Programs include unpaid internships, medical programs, and more. <p>
+          <a href="https://oso.stanford.edu/programs/audiences/5-high-school-students">Learn More</a>
           </div>
         </div>
       </div>
 <div class="containerevent">
     <div class="boxevent">
-        <div class="iconevent">01</div>
+        <div class="iconevent">Year Round</div>
         <br>
         <div class="content">
-          <h id="headingevent"> Service Name </h>
+          <h id="headingevent">The Perry Initiative</h>
           <br>
-          <br>
-          <p id="paragraphevent">jfkdkhfhsjkhfskjhfdjshs</p>
-          <a href="#">Read More</a>
+          <p id="paragraphevent">Location: Varies
+            <br>
+            <br>
+At The Perry Initiative, we are committed to inspiring young women to be leaders in the exciting fields of Orthopaedic Surgery and Engineering. We advance our mission principally by running hands-on outreach programs across the country for women students in high school, college, and medical school. </p>
+            <a href="https://perryinitiative.org/">Learn More</a>
           </div>
         </div>
       </div>
+</section>
 
+<section id="eventpage">
+<div class="containerevent">
+  <div class="boxevent">
+      <div class="iconevent">Summer</div>
+      <br>
+      <div class="content">
+        <h id="headingevent"> Women's Technology Program </h>
+        <br>
+        <p id="paragraphevent">Location: Massachusetts Institute of Technology
+          <br>
+          <br>
+          The MIT Women's Technology Program (WTP) is a rigorous four-week summer academic and residential experience where female high school students explore engineering through hands-on classes, labs, and team-based projects in the summer after 11th grade. </p>
+        <a href="http://wtp.mit.edu/">Learn More</a>
+        </div>
+      </div>
+    </div>
+<div class="containerevent">
+  <div class="boxevent">
+      <div class="iconevent">Year Round</div>
+      <br>
+      <div class="content">
+        <h id="headingevent">Santa Clara County Library</h>
+        <br>
+        <p id="paragraphevent">Location: Varies
+          <br>
+          <br>
+          The Santa Clara County Libraries host a variety of programs for teens including art, reading, storytime, and so much more for free. </p>
+  <a href="http://sccl.evanced.info/signup/list?ag=729%2c727%2c728%2c731%2c725%2c730&df=list&do=1&nd=60&lib=999">Learn More</a>
+
+        </div>
+      </div>
+    </div>
 </section>
 
 <div class="footer">
-  <p>© Hops for Opps. All rights reserved. | Creators: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
+  <p>© Hops for Opps. All rights reserved. | Coded By: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
 </div>
 
 </body>

@@ -9,11 +9,81 @@ color: #f2bc95 (logo skin color)
 color: #72d6e1 (teal for elementary)
 color: #c995c8 (purple for middle)
 color: #b0cf75 (green for high school)*/
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+/* the scroll down button */
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 10s ease-in 4s;
+  transition: all 10s ease-in 4s;
+  animation-delay: 2s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  text-align: center;
+  /* margin-left: 1%; */
+  display: block;
+  width: 3%;
+  height: 6%;
+  /* border: 10% solid #FFF; */
+  /* background-size: 14px auto; */
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 1s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    /* top: calc(50% - 8px); */
+    /* left: calc(50% - 6px); */
+    transform: rotate(-45deg);
+    display: block;
+    width: 25%;
+    height: 25%;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+    /* the px is checked */
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+#mapkey {
+  font-size: 150%;
+}
 
 /* event page layout */
 #eventpage {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,15 +98,14 @@ color: #b0cf75 (green for high school)*/
 
 #gradeevent {
   font-family: 'Quicksand', sans-serif;
-  font-size: 40px;
+  font-size: 250%;
   color: #ebbe47;
 }
 
 #cityheadingevent {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
-  font-size: 80px;
-  font
+  font-size: 100%;
 }
 
 #headingevent {
@@ -53,7 +122,7 @@ color: #b0cf75 (green for high school)*/
 .containerevent .boxevent {
   position: relative;
   width: 350px;
-  height: 400px;
+  height: 460px;
   padding: 40px;
   background: white;
   box-shadow: 0 5px 15px rgba(0,0,0,.1);
@@ -86,10 +155,14 @@ color: #b0cf75 (green for high school)*/
   align-items: center;
   margin: 0 auto;
   border-radius: 50%;
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   transition: 1s;
+}
+
+#paragraphevent {
+  font-size: 80%;
 }
 
 .containerevent .boxevent:nth-child(1) .iconevent {
@@ -133,46 +206,46 @@ color: #b0cf75 (green for high school)*/
 }
 
 .containerevent .boxevent .content h{
-  font-size: 20px;
-  margin: 10px 0;
+  font-size: 100%;
+  /* margin: 0px 0; */
   padding: 0;
   color:black;
 }
 
-.containerevent .boxevent .content p{
-  font-size: 15px;
+/* .containerevent .boxevent .content p{
+  font-size: 10px;
   margin: 10px 0;
   padding: 0;
   color:black;
-}
+} */
 
 /* about us heading */
-#aboutheading {
+/* #aboutheading {
   font-family: 'Ubuntu', sans-serif;
-  /* font-weight: bold; */
+  font-weight: bold;
   font-size: 40px;
   text-align: center;
   margin-top: 60px;
   position: relative;
-  /* margin-left: 44%; */
+  margin-left: 44%;
   color:#ebbe47;
   margin-bottom: 20px;
-}
+} */
 
 /* about us paragraph*/
 #aboutparagraph {
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: 100%;
   text-align: center;
   color: black;
   position: absolute;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #aboutsection {
-  padding-bottom: 150px;
+  padding-top: 5%;
+  /* padding-bottom: 10%; */
 }
 
 *{
@@ -252,7 +325,8 @@ color: #b0cf75 (green for high school)*/
   filter: alpha(opacity=50);
 }
 
-/* slogan text */
+/* WE ARE CURRENTLY HERE. */
+/* slogan text     */
 #slogantext {
   margin: 25px;
   text-align: center;
@@ -266,7 +340,6 @@ color: #b0cf75 (green for high school)*/
   position: relative;
   text-align: center;
   color: black;
-  padding-top: 40px;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
 
@@ -385,7 +458,7 @@ nav a:hover::before {
 }
 
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position Need jquery. */
 /* .sticky {
   position: fixed;
   top: 0;
@@ -432,122 +505,75 @@ header::after {
 }
 
 .logo {
-  float: left;
+  /* float: left;*/
   padding:10px 0;
   position: absolute;
   left: -100px;
 
 }
 
-nav {
-  float: right;
-  /* postion: sticky; */
-  top:0;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
+ol, ul {
   list-style: none;
 }
 
-nav li {
+#mainMenu {
+  float: right;
+}
+
+#mainMenu .btn {
+  padding: 34px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  margin-left: 75px;
-  padding-top: 25px;
+  color: #000;
+}
+
+#mainMenu .btn:hover {
+  background-color: #f5dfa6;
+  -webkit-transition: background-color 0.5s ease-in;
+  -moz-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  -ms-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+}
+
+#mainMenu li {
+	display:block;
+	float:left;
+}
+
+/* Last link in nav will not have margin on the right side */
+#mainMenu .btn:nth-last-child(an+b) {
+	margin-right: 0;
+}
+
+.dropdownBtn {
   position: relative;
 }
 
-nav a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #ebbe47;
-}
-
-nav a::before {
-  content: '';
-  display:block;
-  height: 5px;
-  width: 100%;
-  background-color: #ebbe47;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-
-nav a:hover::before {
-  width: 100%;
-}
-
-.dropbtn {
-  padding-top: 50px;
-}
-
-.dropdownOpp {
-  padding-top: 0px;
-}
-
-.dropdownOpp {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdownOpp-content {
-  padding-right: 0p
-}
-
-.dropdownOpp .dropbtn {
-  font-size: inherit;
-  border: none;
-  outline: none;
-  color: black;
-  padding: inherit;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-} */
-
-.dropdownOpp-content {
+/* Dropdown Content (Hidden by Default) */
+.dropdownMenu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: #f1f1f1;
+  width: 202px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdownOpp-content a {
-  float: none;
+/* Links inside the dropdown */
+.dropdownMenu a {
   color: black;
-  padding: 12px 16px;
+  padding: 20px 34px !important;
   text-decoration: none;
-  display: block;
-  text-align: left;
+  display: block !important;
 }
 
-/* .dropdownOpp-content a:hover {
-  background-color: #ddd;
-} */
-
-.dropdownOpp:hover .dropdownOpp-content {
+/* Show the dropdown menu on hover */
+.dropdownBtn:hover .dropdownMenu {
   display: block;
 }
 
-/* fa-caret-down:before{content:"\f0d7"}.fa-caret-up:before{content:"\f0d8"}.fa-caret-left:before{content:"\f0d9"}.fa-caret-right:before{content:"\f0da"}
-fa-toggle-down:before,.fa-caret-square-o-down:before{content:"\f150"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:"\f151"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:"\f152"} */
 
 #googleForm {
   padding-top: 10px;
@@ -558,7 +584,7 @@ fa-toggle-down:before,.fa-caret-square-o-down:before{content:"\f150"}.fa-toggle-
 
 
 .searchTitle{
-  font-size: 40px;
+  font-size: 36px;
   margin-top: 80px;
   font-family: 'Ubuntu', sans-serif;
   margin-right: auto;
@@ -635,3 +661,74 @@ fa-toggle-down:before,.fa-caret-square-o-down:before{content:"\f150"}.fa-toggle-
 
 /* -------------------- Colors: Text */
 .blue select    { color: black; }
+
+/* code for responsive on diff platfom */
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+@-ms-viewport {
+  width: device-width ;
+}
+
+/* LEAVE THESE IN THIS ORDER PLEASE! */
+/* for ipad pro */
+@media only screen and (max-width:1024px){
+
+    #aboutsection {
+      padding-top: 5%;
+      padding-bottom: 7%;
+    }
+
+    #aboutsection2 {
+      padding-top: 13%;
+      /* padding-bottom: 110%; */
+    }
+}
+
+/* CSS for ipad */
+@media only screen and (max-width:768px){
+    #eventpage {
+      /* margin: 0;
+      padding: 0; */
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    #aboutsection {
+      padding-top: 5%;
+      padding-bottom: 10%;
+    }
+
+    #aboutsection2 {
+      padding-top: 10%;
+      /* padding-bottom: 110%; */
+    }
+}
+
+/* CSS for iphones*/
+@media only screen and (max-width:414px){
+    #eventpage {
+      /* margin: 0;
+      padding: 0; */
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    #aboutsection {
+      padding-top: 20%;
+      padding-bottom: 50%;
+    }
+
+    #aboutsection2 {
+      padding-top: 80%;
+      /* padding-bottom: 110%; */
+    }
+}

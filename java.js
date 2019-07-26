@@ -1,4 +1,13 @@
+// scroll down button. Doesn't work without jquery, but importing jquery is giving insepect a problem
+// $(function() {
+//   $('a[href*=#searchTitle]').on('click', function(e) {
+//     e.preventDefault();
+//     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+//     return False;
+//   });
+// });
 
+ // the search bar
 function getLocation() {
   return document.getElementById("locationSelected").value;
 }
@@ -77,6 +86,9 @@ function goToLocPage(){
       // }
     }
   }
+
+
+
 
 // //STICK BAR BELOW
 // $(document).ready(function() {

@@ -12,34 +12,32 @@
     <!-- font-family: 'Playfair Display', serif; (is the heading) -->
     <!-- font-family: 'Montserrat', sans-serif; (is the body) -->
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
     <script src="java.js"> </script>
   </head>
 
 <body>
   <header>
+    <!-- <div id="myContainer"> -->
     <div class = "container">
-      <nav>
-      <ul>
-        <a href="index.html"><img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a>
-        <li><a href="about.html">ABOUT</a></li>
-        <li> <div class="dropdownOpp">
-          <button class="dropbtn">ALL OPPORTUNITIES
-            <i class= "dropOpp"></i>
-          </button>
-          <div class="dropdownOpp-content">
-            <a href="fremont.html">Fremont</a>
-            <a href="milpitas.html">Milpitas</a>
-            <a href="sanjose.html">San Jose</a>
-            <a href="otherlocation.html">Other</a>
-            <a href="allopp.html">All</a>
-          </div>
-        </div> </li>
+      <a href="index.html">
+        <img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a></li>
+      <ul id="mainMenu">
+        <li><a href="about.html" class="btn">ABOUT</a></li>
+        <li class="dropdownBtn"><a href="allopp.html" class="btn">ALL OPPORTUNITIES</a>
+          <div class="dropdownMenu">
+            <a href="fremont.html" class="btn">Fremont</a>
+            <a href="milpitas.html" class="btn">Milpitas</a>
+            <a href="sanjose.html" class="btn">San Jose</a>
+            <a href="otherlocation.html" class="btn">Other</a>
+            <a href="allopp.html" class="btn">Map</a>
+          </li>
         <!-- <li><a href="allopp.html">ALL OPPORTUNITIES</a></li> -->
-        <li><a href="online.html">ONLINE RESOURCES</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="online.html" class="btn">ONLINE RESOURCES</a></li>
+        <li><a href="contact.html" class="btn">CONTACT US</a></li>
       </ul>
-      </nav>
     </div>
+  <!-- </div> -->
   </header>
 <!-- <br>
 <br> -->
@@ -54,7 +52,7 @@
 </div>
 
 <div class="footer">
-  <p>© Hops for Opps. All rights reserved. | Creators: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
+  <p>© Hops for Opps. All rights reserved. | Coded By: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
 
   </p>
 </div>

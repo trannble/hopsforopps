@@ -12,34 +12,34 @@
     <!-- font-family: 'Playfair Display', serif; (is the heading) -->
     <!-- font-family: 'Montserrat', sans-serif; (is the body) -->
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="java.js"> </script>
   </head>
 
 <body>
   <header>
+    <!-- <div id="myContainer"> -->
     <div class = "container">
-      <nav>
-      <ul>
-        <a href="index.html"><img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a>
-        <li><a href="about.html">ABOUT</a></li>
-        <li> <div class="dropdownOpp">
-          <button class="dropbtn">ALL OPPORTUNITIES
-            <i class= "dropOpp"></i>
-          </button>
-          <div class="dropdownOpp-content">
-            <a href="fremont.html">Fremont</a>
-            <a href="milpitas.html">Milpitas</a>
-            <a href="sanjose.html">San Jose</a>
-            <a href="otherlocation.html">Other</a>
-            <a href="allopp.html">All</a>
-          </div>
-        </div> </li>
+      <a href="index.html">
+        <img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a></li>
+      <ul id="mainMenu">
+        <li><a href="about.html" class="btn">ABOUT</a></li>
+        <li class="dropdownBtn"><a href="allopp.html" class="btn">ALL OPPORTUNITIES</a>
+          <div class="dropdownMenu">
+            <a href="fremont.html" class="btn">Fremont</a>
+            <a href="milpitas.html" class="btn">Milpitas</a>
+            <a href="sanjose.html" class="btn">San Jose</a>
+            <a href="otherlocation.html" class="btn">Other</a>
+            <a href="allopp.html" class="btn">Map</a>
+          </li>
         <!-- <li><a href="allopp.html">ALL OPPORTUNITIES</a></li> -->
-        <li><a href="online.html">ONLINE RESOURCES</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="online.html" class="btn">ONLINE RESOURCES</a></li>
+        <li><a href="contact.html" class="btn">CONTACT US</a></li>
       </ul>
-      </nav>
     </div>
+  <!-- </div> -->
   </header>
+
 
   <div class="containerslogan">
     <img id = "light" src="https://i.ibb.co/R0M4qvJ/sanjose.jpg" alt="milpitas-ca-3" border="0" width="100%" height="60%">
@@ -62,39 +62,44 @@
           <div class="content">
             <h id="headingevent"> San Jose Public Library Programs </h>
             <br>
-            <br>
+            <p id="paragraphevent">Location: Libraries
+              <br>
+              <br>
             <p id="paragraphevent">From Summer Learning Program to chess and coding classes. San Jose Public Library constantly has programs for you and your family. </p>
             <a href="https://www.sjpl.org/events-list?words=&branch=All&topic=All&age%5B%5D=Kids&date%5Bmin%5D%5Bdate%5D=Jul+25+2019&date%5Bmax%5D%5Bdate%5D=Apr+25+2020">List of events</a>
             </div>
           </div>
         </div>
-<div class="containerevent">
-    <div class="boxevent">
-        <div class="iconevent">Summer</div>
-        <br>
-        <div class="content">
-          <h id="headingevent"> YMCA </h>
-          <br>
-          <br>
-          <p id="paragraphevent">"YMCA Core Day Camps are all about youth voice and choice. Campers will select from activities and fun experiences that rotate each week. . ." Financial aid available.</p>
-          <a href="https://www.ymcasv.org/association/html/programs_camp.html">More Information</a>
-          </div>
-        </div>
-      </div>
   <div class="containerevent">
       <div class="boxevent">
-          <div class="iconevent">01</div>
+          <div class="iconevent">Summer</div>
           <br>
           <div class="content">
-            <h id="headingevent"> Service Name </h>
+            <h id="headingevent"> YMCA</h>
             <br>
-            <br>
-            <p id="paragraphevent">jfkdkhfhsjkhfskjhfdjshs</p>
-            <a href="#">Read More</a>
+            <p id="paragraphevent">Location: Varies
+              <br>
+              <br>
+            <p id="paragraphevent">"YMCA Core Day Camps are all about youth voice and choice. Campers will select from activities and fun experiences that rotate each week."</p>
+            <a href="https://www.ymcasv.org/association/html/programs_camp.html">Learn More</a>
             </div>
           </div>
         </div>
-
+  <div class="containerevent">
+      <div class="boxevent">
+          <div class="iconevent">Summer</div>
+          <br>
+          <div class="content">
+            <h id="headingevent">Read Write Discover </h>
+            <br>
+            <p id="paragraphevent">Location: Libraries
+              <br>
+              <br>
+            <p id="paragraphevent">"Read Write Discover aims to promote literacy through individualized lesson plans and the relationship between tutor and learner." Available for K-8th graders at different libraries.</p>
+            <a href="http://www.readwritediscover.org/summer-2019-sites/">Learn More</a>
+            </div>
+          </div>
+        </div>
 </section>
 
 <section id="titleevent">
@@ -112,9 +117,11 @@
         <div class="content">
           <h id="headingevent"> Teens Reach </h>
           <br>
-          <br>
+          <p id="paragraphevent">Location: San Jose Public Libraries
+            <br>
+            <br>
           <p id="paragraphevent">"Teens Reach is the youth council for the San José Public Library . . . Some of the activities Teens Reach members have been involved in include: children's craft programs, volunteering at our Summer Reading Celebration registration table, and representing San José Public Library at community events."</p>
-          <a href="https://www.sjpl.org/teensreach">Sign up</a>
+          <a href="https://www.sjpl.org/teensreach">Learn More</a>
           <!-- <a href="https://www.sjpl.org/events-list?words=&branch=All&topic=All&age%5B%5D=Teens&date%5Bmin%5D%5Bdate%5D=Jul+25+2019&date%5Bmax%5D%5Bdate%5D=Apr+25+2020">More programs</a> -->
           </div>
         </div>
@@ -124,29 +131,50 @@
         <div class="iconevent">School-year</div>
         <br>
         <div class="content">
-          <h id="headingevent"> Girls Who Code Club </h>
+          <h id="headingevent"> Girls Who Code Club</h>
           <br>
-          <br>
-          <p id="paragraphevent">"Girls Who Code is a national nonprofit organization committed to closing the gender gap in STEM fields. Girls Who Code works to educate, inspire, and equip high school and middle school girls with the skills and resources to pursue opportunities in computing fields."</p>
-          <a href="#">Read More</a>
+          <p id="paragraphevent">Location: Middle Schools/Libraries
+            <br>
+            <br>
+          <p id="paragraphevent">Girls Who Code is committed to closing the gender gap in STEM fields. Girls Who Code Clubs focus on providing the skills and resources for computer science fields."</p>
+          <a href="https://girlswhocode.com/clubs/">Learn More</a>
           </div>
         </div>
       </div>
 <div class="containerevent">
     <div class="boxevent">
-        <div class="iconevent">01</div>
+        <div class="iconevent">Summer</div>
         <br>
         <div class="content">
-          <h id="headingevent"> Service Name </h>
+          <h id="headingevent">Silicon Valley Education Foundation </h>
           <br>
-          <br>
-          <p id="paragraphevent">jfkdkhfhsjkhfskjhfdjshs</p>
-          <a href="#">Read More</a>
+          <p id="paragraphevent">Location: East San Jose
+            <br>
+            <br>
+          <p id="paragraphevent">Check out numerous programs including STEM Innovation Hub, 49ers STEM Leadership Institute, and Elevate Math.</p>
+          <a href="https://svefoundation.org/what-we-do-2/">Learn More</a>
           </div>
         </div>
       </div>
-
 </section>
+<section id="eventpage">
+  <div class="containerevent">
+      <div class="boxevent">
+          <div class="iconevent">Summer</div>
+          <br>
+          <div class="content">
+            <h id="headingevent">Read Write Discover </h>
+            <br>
+            <p id="paragraphevent">Location: Libraries
+              <br>
+              <br>
+            <p id="paragraphevent">"Read Write Discover aims to promote literacy through individualized lesson plans and the relationship between tutor and learner." Available for K-8th graders at different libraries.</p>
+            <a href="http://www.readwritediscover.org/summer-2019-sites/">Learn More</a>
+            </div>
+          </div>
+        </div>
+</section>
+
 
 <section id="titleevent">
   <div align="center">
@@ -163,9 +191,11 @@
           <div class="content">
             <h id="headingevent"> OrionHacks </h>
             <br>
-            <br>
+            <p id="paragraphevent">Location: Varies
+              <br>
+              <br>
             <p id="paragraphevent"> "OrionHacks is a 24 hour hackathon, comprised of hundreds of high school students all around the Bay Area to build projects that solve issues through code. Atendees will create amazing projects that are impactful for this world." </p>
-            <a href="https://www.orionhacks.com">More information</a>
+            <a href="https://www.orionhacks.com">Learn More</a>
             </div>
           </div>
         </div>
@@ -174,11 +204,13 @@
         <div class="iconevent">Summer</div>
         <br>
         <div class="content">
-          <h id="headingevent"> Girls Who Code SIP</h>
+          <h id="headingevent"> Girls Who Code </h>
           <br>
-          <br>
+          <p id="paragraphevent">Location: Varies
+            <br>
+            <br>
           <p id="paragraphevent">A 7-week introductory computer science Summer Immersion Program for upcoming juniors and seniors. "Learn​ about ​computer science,​ ​gain​ ​exposure​ ​to​ ​tech​ ​jobs,​ ​and​ ​join​ ​a​ sisterhood​ ​of​ ​girls​ ​who​ ​are​ ​using​ ​computer​ ​science​ ​to​ ​become​ ​change-makers."</p>
-          <a href="https://girlswhocode.com/summer-immersion-programs">More Information</a>
+          <a href="https://girlswhocode.com/summer-immersion-programs">Learn More</a>
           </div>
         </div>
       </div>
@@ -189,13 +221,15 @@
         <div class="content">
           <h id="headingevent"> West Valley Community Services</h>
           <br>
-          <br>
+          <p id="paragraphevent">Location: West Vally Community Services
+            <br>
+            <br>
           <p id="paragraphevent">"West Valley Community Services is fighting poverty by providing critical food, housing, and support services to the low income and homeless individuals and families in the west valley communities of Cupertino, Los Gatos, Monte Sereno, Saratoga, and West San Jose."</p>
-          <a href="https://www.wvcommunityservices.org/volunteer">Sign up</a>
+          <a href="https://www.wvcommunityservices.org/volunteer">Learn More</a>
           </div>
         </div>
       </div>
-</section>
+  </section>
 
 <section id="eventpage">
 <div class="containerevent">
@@ -205,16 +239,33 @@
         <div class="content">
           <h id="headingevent"> Second Harvest Food Bank</h>
           <br>
-          <br>
-          <p id="paragraphevent">"Lead our community to ensure that anyone who needs a healthy meal can get one." You can help by sorting food in their warehouses, distributing food in the community, and through other events.</p>
-          <a href="https://www.shfb.org/give-help/volunteer">Sign up</a>
+          <p id="paragraphevent">Location: Cypress Center warehouse in San Jose or Bing Center warehouse in San Carlos
+            <br>
+            <br>
+          <p id="paragraphevent">Their mission is to "Lead our community to ensure that anyone who needs a healthy meal can get one." You can help by "sorting food in their warehouses, distributing food in the community, and through other events."</p>
+          <a href="https://www.shfb.org/give-help/volunteer">Learn More</a>
           </div>
         </div>
       </div>
+  <div class="containerevent">
+      <div class="boxevent">
+          <div class="iconevent">Summer</div>
+          <br>
+          <div class="content">
+            <h id="headingevent">Silicon Valley Education Foundation </h>
+            <br>
+            <p id="paragraphevent">Location: East San Jose
+              <br>
+              <br>
+            <p id="paragraphevent">Check out numerous programs including College & Career Readiness Program, East Side Alliance, STEM Innovation Hub, 49ers STEM Leadership Institute, and Elevate Math.</p>
+            <a href="https://svefoundation.org/what-we-do-2/">Learn More</a>
+            </div>
+          </div>
+        </div>
 </section>
 
 <div class="footer">
-  <p>© Hops for Opps. All rights reserved. | Creators: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
+  <p>© Hops for Opps. All rights reserved. | Coded By: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
 
   </p>
 </div>

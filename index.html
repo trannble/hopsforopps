@@ -2,6 +2,12 @@
 <html>
 
   <head>
+    <style>
+    html {
+          /* when down arrow button is pressed, page scrolls to the bottom slowly. (rather than instantly being there) */
+          scroll-behavior: smooth;
+        }
+    </style>
     <title>Hops for Opps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
@@ -11,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <!-- this one is footer -->
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  -->
+      <!-- jquery for the scroll down arrow button  -->
     <script src="java.js"> </script>
   </head>
 
@@ -18,27 +26,22 @@
   <header>
     <!-- <div id="myContainer"> -->
     <div class = "container">
-      <nav>
-      <ul>
-        <a href="index.html"><img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a>
-        <li><a href="about.html">ABOUT</a></li>
-        <li> <div class="dropdownOpp">
-          <button class="dropbtn">ALL OPPORTUNITIES
-            <i class= "dropOpp"></i>
-          </button>
-          <div class="dropdownOpp-content">
-            <a href="fremont.html">Fremont</a>
-            <a href="milpitas.html">Milpitas</a>
-            <a href="sanjose.html">San Jose</a>
-            <a href="otherlocation.html">Other</a>
-            <a href="allopp.html">All</a>
-          </div>
-        </div> </li>
+      <a href="index.html">
+        <img src = "https://i.ibb.co/C9x4yZs/Untitled13.jpg" alt="Hops for Opps" border="0" width="199.6px" height="85px" margin-left="0"  alt = "logo" class = "logo"></a>
+      <ul id="mainMenu">
+        <li><a href="about.html" class="btn">ABOUT</a></li>
+        <li class="dropdownBtn"><a href="allopp.html" class="btn">ALL OPPORTUNITIES</a>
+          <div class="dropdownMenu">
+            <a href="fremont.html" class="btn">Fremont</a>
+            <a href="milpitas.html" class="btn">Milpitas</a>
+            <a href="sanjose.html" class="btn">San Jose</a>
+            <a href="otherlocation.html" class="btn">Other</a>
+            <a href="allopp.html" class="btn">Map</a>
+          </li>
         <!-- <li><a href="allopp.html">ALL OPPORTUNITIES</a></li> -->
-        <li><a href="online.html">ONLINE RESOURCES</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="online.html" class="btn">ONLINE RESOURCES</a></li>
+        <li><a href="contact.html" class="btn">CONTACT US</a></li>
       </ul>
-      </nav>
     </div>
   <!-- </div> -->
   </header>
@@ -46,14 +49,17 @@
 <!-- slogan section -->
 <div class="containerslogan">
   <img id="light" src="https://i.ibb.co/NrYXHmT/maxresdefault.jpg" alt="" width="100%" height="60%">
+  <a name="searchTitle"></a>
+  <a href="#searchTitle" class="scroll-down" address="true"></a>    <!-- The pointing down arrow -->
   <div class="centered"> LEAP TOWARD A BRIGHTER FUTURE</div>
+</section>
 </div>
 
 
 <!-- Dropdown Menu -->
 
-<div class="searchTitle">
-  <p>SEARCH FOR OPPORTUNITIES NEAR YOU:</p>
+<div class="searchTitle" id="searchTitle">
+  <p>SEARCH FOR FREE OPPORTUNITIES NEAR YOU:</p>
 </div>
 <div class="box semi-square">
   <div class="styled-select blue semi-square">
@@ -76,11 +82,10 @@
   		<!-- <option value= "other">Other</option> -->
     </select>
   </div>
-    <!-- <button onclick="redirect()">SEARCH</button> -->
 </div>
 
 <div class="footer">
-  <p>© Hops for Opps. All rights reserved. | Creators: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
+  <p>© Hops for Opps. All rights reserved. | Coded By: Rishika Singh, Anastasia Trushchankova, Tran Le </p> <br>
 
   </p>
 </div>
