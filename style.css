@@ -11,6 +11,16 @@ color: #c995c8 (purple for middle)
 color: #b0cf75 (green for high school)*/
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+/* Adjustable width of screen? Not sure if properly working */
+.WebContainer{
+    width: 100%;
+    height: auto;
+}
+.articles{
+    width:90%; /*Takes 90% width from WebContainer*/
+    height: auto;
+    margin: auto;
+}
 
 /* the scroll down button */
 .scroll-down {
@@ -19,6 +29,7 @@ color: #b0cf75 (green for high school)*/
   transition: all 10s ease-in 4s;
   animation-delay: 2s;
 }
+
 
 .scroll-down {
   position: absolute;
@@ -212,12 +223,12 @@ color: #b0cf75 (green for high school)*/
   color:black;
 }
 
-/* .containerevent .boxevent .content p{
-  font-size: 10px;
+.containerevent .boxevent .content p{
+  font-size: 15px;
   margin: 10px 0;
   padding: 0;
   color:black;
-} */
+}
 
 /* about us heading */
 /* #aboutheading {
@@ -325,24 +336,23 @@ color: #b0cf75 (green for high school)*/
   filter: alpha(opacity=50);
 }
 
-/* WE ARE CURRENTLY HERE. */
 /* slogan text     */
-#slogantext {
+/* #slogantext {
   margin: 25px;
   text-align: center;
   padding-top: 225px;
   font-family: 'Quicksand', sans-serif;
   font-size: 100px;
   padding-bottom: 225px;
-}
+} */
 
 .containerslogan {
   position: relative;
   text-align: center;
   color: black;
+  width: 100%;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
-
 }
 
 .centered {
@@ -354,13 +364,13 @@ color: #b0cf75 (green for high school)*/
   text-align: center;
   padding-top: 180px;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 69px;
+  font-size: 400%;
   padding-bottom: 225px;
   font-weight: bold;
   color: black;
 }
 
-.centered2 {
+/* .centered2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -372,10 +382,10 @@ color: #b0cf75 (green for high school)*/
   font-size: 69px;
   padding-bottom: 225px;
   font-weight: bold;
-  /* display: table; */
-  /* background-color: white; */
+  display: table;
+  background-color: white;
   color: black;
-}
+} */
 
 /* the website background */
 body {
@@ -385,12 +395,11 @@ body {
   font-weight: 300;
 }
 
-/* nav bar */
 .container {
   width:100%;
   margin:0 auto;
   position: relative;
-  font-size: 14px;
+  font-size: 85%;
 }
 
 header {
@@ -405,41 +414,41 @@ header::after {
   clear:both;
 }
 
-
-nav {
+/* OLD nav bar */
+/* nav {
   float: right;
-  /* position: sticky; */
+  position: sticky;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  /* postion:sticky; */
-}
+  postion:sticky;
+} */
 
-nav li {
+/* nav li {
   display: inline-block;
-  margin-left: 75px;
-  padding-top: 50px;
+  margin-left: 0px;
+  padding-top: 5000px;
 
   position: relative;
-}
+} */
 
-nav a {
+/* nav a {
   color: black;
   font-family: 'Quicksand', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
-}
+  font-size: 0px;
+} */
 
 
-nav a:hover {
+/* nav a:hover {
   color: black;
-}
+} */
 
-nav a::before {
+/* nav a::before {
   content: '';
   display:block;
   height: 5px;
@@ -451,11 +460,11 @@ nav a::before {
   width: 0%;
 
   transition: all ease-in-out 250ms;
-}
+} */
 
-nav a:hover::before {
+/* nav a:hover::before {
   width: 100%;
-}
+} */
 
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position Need jquery. */
@@ -470,12 +479,12 @@ nav a:hover::before {
   padding-top: 60px;
 } */
 
-
+/* we are here */
 /* slogan text */
-#slogantext {
+/* #slogantext {
   margin: 0px;
   padding-top: 250px;
-}
+} */
 
 
 /* the website background */
@@ -492,7 +501,7 @@ body {
   margin:0 auto;
   position: relative;
 }
-
+/* we are here */
 
 header {
   background:white;
@@ -542,10 +551,9 @@ ol, ul {
 	float:left;
 }
 
-/* Last link in nav will not have margin on the right side */
-#mainMenu .btn:nth-last-child(an+b) {
+/* #mainMenu .btn:nth-last-child(an+b) {
 	margin-right: 0;
-}
+} */
 
 .dropdownBtn {
   position: relative;
@@ -685,6 +693,14 @@ ol, ul {
       padding-top: 13%;
       /* padding-bottom: 110%; */
     }
+
+    .centered {
+      font-size: 350%;
+    }
+
+    .container {
+      width: 75%;
+    }
 }
 
 /* CSS for ipad */
@@ -707,6 +723,32 @@ ol, ul {
     #aboutsection2 {
       padding-top: 10%;
       /* padding-bottom: 110%; */
+    }
+
+    .centered {
+      font-size: 275%;
+    }
+
+    .container {
+      font-size: 60%;
+      width: 72%;
+    }
+
+    #mainMenu {
+      margin-right: 1%;
+    }
+
+  .logo {
+      padding: 5px 0;
+      margin-left: -95px;
+      position: absolute;
+      left: 1px;
+      width: 98.03px;
+      height: 41.769px;
+}
+
+    #mainMenu .btn {
+      padding: 20px;
     }
 }
 
@@ -731,4 +773,59 @@ ol, ul {
       padding-top: 80%;
       /* padding-bottom: 110%; */
     }
+
+    .centered {
+      padding-top: 60%;
+      font-size: 150%;
+    }
+
+    .container {
+    width:100%;
+    font-size: 30%;
+    /* text-align: center; */
+    }
+
+    .logo {
+      padding: 5px 0;
+      position: absolute;
+      left: 35%;
+      width: 62.874px;
+      height: 26.775px;
+    }
+
+    #mainMenu {
+      margin-right: 8%;
+    }
+
+    #mainMenu .btn {
+      padding: 10px;
+    }
+
+    .searchTitle {
+      font-size: 125%;
+    }
+
+    .box {
+      border: 10px solid #f5dfa6;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-size: 10px;
+      }
+
+      .styled-select {
+        height: 30px;
+        width: 150px;
+      }
+
+      .styled-select select {
+        font-size: 13px;
+        width: 150px;
+      }
+
+    }
+
 }
