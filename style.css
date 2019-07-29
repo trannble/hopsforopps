@@ -331,10 +331,10 @@ color: #b0cf75 (green for high school)*/
 }
 
 /* image of light opacity */
-/* #light {
+#light {
   opacity: 0.4;
   filter: alpha(opacity=50);
-} */
+}
 
 /* slogan text     */
 /* #slogantext {
@@ -362,10 +362,10 @@ color: #b0cf75 (green for high school)*/
   transform: translate(-50%, -50%);
   margin: 0px;
   text-align: center;
-  padding-top: 180px;
+  margin-top: 0px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 400%;
-  padding-bottom: 225px;
+  /* padding-bottom: 225px; */
   font-weight: bold;
   color: black;
 }
@@ -775,7 +775,7 @@ ol, ul {
     }
 
     .centered {
-      padding-top: 60%;
+      margin-top: 0%;
       font-size: 150%;
     }
 
