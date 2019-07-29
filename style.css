@@ -331,10 +331,10 @@ color: #b0cf75 (green for high school)*/
 }
 
 /* image of light opacity */
-#light {
+/* #light {
   opacity: 0.4;
   filter: alpha(opacity=50);
-}
+} */
 
 /* slogan text     */
 /* #slogantext {
