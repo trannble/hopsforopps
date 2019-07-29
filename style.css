@@ -730,7 +730,7 @@ ol, ul {
     }
 
     .container {
-      font-size: 60%;
+      font-size: 30%;
       width: 72%;
     }
 
@@ -810,7 +810,7 @@ ol, ul {
     }
 
     .footer {
-      position: absolute;
+      position: relative;
       bottom: 0;
       width: 100%;
       font-size: 10px;
