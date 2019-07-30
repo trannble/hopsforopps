@@ -773,6 +773,10 @@ ol, ul {
       padding-top: 80%;
       /* padding-bottom: 110%; */
     }
+	
+	#paragraphevent {
+        font-size: 80%;
+      }
 
     .centered {
       margin-top: 0%;
