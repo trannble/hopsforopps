@@ -332,7 +332,7 @@ color: #b0cf75 (green for high school)*/
 
 /* image of light opacity */
 #light {
-  opacity: 0.4;
+  opacity: 0.6;
   filter: alpha(opacity=50);
 }
 
